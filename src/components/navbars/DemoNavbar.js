@@ -116,9 +116,9 @@ function DemoNavbar(props) {
                         <i className="ni ni-spaceship"></i>
                       </div>
                       <Media body className="ml-3">
-                        <h6 className="heading text-primary mb-md-1">
+                        {/* <h6 className="heading text-primary mb-md-1">
                           Elements
-                        </h6>
+                        </h6> */}
                         <p className="description d-none d-md-inline-block mb-0">
                           Learn how to use compiling Scss, change brand colors
                           and more.

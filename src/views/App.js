@@ -39,7 +39,7 @@ import FileUpload from "components/index-page/FileUpload.js";
 import Carousel from "components/index-page/Carousel.js";
 import NucleoIcons from "components/index-page/NucleoIcons.js";
 
-function Index() {
+function App() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
     window.scrollTo(0, 0);
@@ -147,4 +147,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default App;

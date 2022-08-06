@@ -7,7 +7,7 @@ import "assets/css/nucleo-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/scss/argon-design-system.scss?v1.0.0";
 
-import Index from "views/Index.js";
+import App from "views/App.js";
 import Sections from "views/Sections.js";
 import Presentation from "views/Presentation.js";
 import AboutUs from "views/examples/AboutUs.js";
@@ -32,7 +32,7 @@ import ResetPage from "views/examples/ResetPage.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" exact render={(props) => <Index {...props} />} />
+      <Route path="/index" exact render={(props) => <LandingPage {...props} />} />
       <Route
         path="/sections"
         exact
@@ -129,7 +129,7 @@ ReactDOM.render(
         exact
         render={(props) => <ResetPage {...props} />}
       />
-      <Redirect to="/presentation" />
+      <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
