@@ -48,7 +48,7 @@ function DemoNavbar(props) {
   return (
     <>
       <Navbar
-        className={"navbar-main headroom " + navbarType}
+        className={"sticky-top navbar-main headroom " + navbarType} 
         expand="lg"
         id="dark-navbar-main"
       >
@@ -74,7 +74,7 @@ function DemoNavbar(props) {
                 <Col className="collapse-brand" xs="6">
                   <Link to="/index">
                     <img
-                      alt="..."
+                      alt="Logo"
                       src={require("assets/img/brand/blue.png")}
                     ></img>
                   </Link>

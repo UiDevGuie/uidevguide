@@ -1,44 +1,33 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 // reactstrap components
 import { Container, Row, Button } from "reactstrap";
 
 // Core Components
-import DemoNavbar from "components/navbars/DemoNavbar.js";
-import DemoFooter from "components/footers/DemoFooter.js";
-import HeaderIndex from "components/headers/HeaderIndex.js";
-// Demo Sections for this page
-import Buttons from "components/index-page/Buttons.js";
-import Inputs from "components/index-page/Inputs.js";
-import Selects from "components/index-page/Selects.js";
-import Dropdowns from "components/index-page/Dropdowns.js";
-import Textarea from "components/index-page/Textarea.js";
-import Tags from "components/index-page/Tags.js";
-import Spinners from "components/index-page/Spinners.js";
-import CRTS from "components/index-page/CRTS.js";
-import Menus from "components/index-page/Menus.js";
-import Navbars from "components/index-page/Navbars.js";
-import NavigationPills from "components/index-page/NavigationPills.js";
-import ProgressBars from "components/index-page/ProgressBars.js";
-import Paginations from "components/index-page/Paginations.js";
-import Badges from "components/index-page/Badges.js";
-import Alerts from "components/index-page/Alerts.js";
-import Toasts from "components/index-page/Toasts.js";
-import PreFooters from "components/index-page/PreFooters.js";
-import Footers from "components/index-page/Footers.js";
-import Typography from "components/index-page/Typography.js";
-import Images from "components/index-page/Images.js";
-import Tables from "components/index-page/Tables.js";
-import Comments from "components/index-page/Comments.js";
-import Chat from "components/index-page/Chat.js";
-import Cards from "components/index-page/Cards.js";
-import Modals from "components/index-page/Modals.js";
-import DatePickers from "components/index-page/DatePickers.js";
-import TooltipsPopovers from "components/index-page/TooltipsPopovers.js";
-import FileUpload from "components/index-page/FileUpload.js";
-import Carousel from "components/index-page/Carousel.js";
-import NucleoIcons from "components/index-page/NucleoIcons.js";
-
+import Sections from "views/Sections.js";
+import Presentation from "views/Presentation.js";
+import AboutUs from "views/examples/AboutUs.js";
+import AccountSettings from "views/examples/AccountSettings.js";
+import BlogPost from "views/examples/BlogPost.js";
+import BlogPosts from "views/examples/BlogPosts.js";
+import ChatPage from "views/examples/ChatPage.js";
+import CheckoutPage from "views/examples/CheckoutPage.js";
+import ContactUs from "views/examples/ContactUs.js";
+import Ecommerce from "views/examples/Ecommerce.js";
+import Error from "views/examples/Error.js";
+import Error500 from "views/examples/Error500.js";
+import InvoicePage from "views/examples/InvoicePage.js";
+import LandingPage from "views/examples/LandingPage.js";
+import LoginPage from "views/examples/LoginPage.js";
+import PricingPage from "views/examples/PricingPage.js";
+import ProductPage from "views/examples/ProductPage.js";
+import ProfilePage from "views/examples/ProfilePage.js";
+import RegisterPage from "views/examples/RegisterPage.js";
+import ResetPage from "views/examples/ResetPage.js";
+import Javascript from "../routes/Javascript/Javascript";
+import DemoNavbar from "../components/navbars/DemoNavbar";
 function App() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -60,89 +49,109 @@ function App() {
   return (
     <>
       <DemoNavbar type="transparent" />
-      <div className="wrapper">
-        <Button
-          className="btn-icon-only back-to-top show"
-          color="primary"
-          name="button"
-          type="button"
-          onClick={() => {
-            window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
-          }}
-        >
-          <i className="ni ni-bold-up"></i>
-        </Button>
-        <HeaderIndex />
-        <Buttons />
-        <Inputs />
-        <div className="section section-select">
-          <Container>
-            <Row>
-              <Selects />
-              <Dropdowns />
-            </Row>
-            <Row>
-              <Textarea />
-              <Tags />
-            </Row>
-            <Spinners />
-          </Container>
-        </div>
-        <div className="section">
-          <Container>
-            {/*CRTS short for Checkboxes, Radios, Toggles and Sliders*/}
-            <CRTS />
-            <Menus />
-          </Container>
-        </div>
-        <Navbars />
-        <div className="section section-components">
-          <Container>
-            <NavigationPills />
-            <Row>
-              <ProgressBars />
-              <Paginations />
-            </Row>
-            <Badges />
-            <Alerts />
-            <Toasts />
-          </Container>
-        </div>
-        <PreFooters />
-        <Footers />
-        <div className="section section-typography">
-          <Container>
-            <Typography />
-            <Images />
-          </Container>
-        </div>
-        <div className="section section-content-areas">
-          <Container>
-            <h2 className="mt-lg mb-5">
-              <span>Content Areas</span>
-            </h2>
-            <Tables />
-            <Comments />
-            <Chat />
-          </Container>
-        </div>
-        <Cards />
-        <div className="section section-js-components">
-          <Container>
-            <h2 className="mt-lg mb-5">
-              <span>Javascript Components</span>
-            </h2>
-            <Modals />
-            <DatePickers />
-            <TooltipsPopovers />
-            <FileUpload />
-          </Container>
-        </div>
-        <Carousel />
-        <NucleoIcons />
-        <DemoFooter />
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/index" exact render={(props) => <LandingPage {...props} />} />
+          <Route path="/javascript" exact render={(props) => <Javascript {...props} />} />
+          <Route
+            path="/sections"
+            exact
+            render={(props) => <Sections {...props} />}
+          />
+          <Route
+            path="/presentation"
+            exact
+            render={(props) => <Presentation {...props} />}
+          />
+          <Route
+            path="/about-us"
+            exact
+            render={(props) => <AboutUs {...props} />}
+          />
+          <Route
+            path="/account-settings"
+            exact
+            render={(props) => <AccountSettings {...props} />}
+          />
+          <Route
+            path="/blog-post"
+            exact
+            render={(props) => <BlogPost {...props} />}
+          />
+          <Route
+            path="/blog-posts"
+            exact
+            render={(props) => <BlogPosts {...props} />}
+          />
+          <Route
+            path="/chat-page"
+            exact
+            render={(props) => <ChatPage {...props} />}
+          />
+          <Route
+            path="/checkout-page"
+            exact
+            render={(props) => <CheckoutPage {...props} />}
+          />
+          <Route
+            path="/contact-us"
+            exact
+            render={(props) => <ContactUs {...props} />}
+          />
+          <Route
+            path="/ecommerce"
+            exact
+            render={(props) => <Ecommerce {...props} />}
+          />
+          <Route path="/error" exact render={(props) => <Error {...props} />} />
+          <Route
+            path="/error-500"
+            exact
+            render={(props) => <Error500 {...props} />}
+          />
+          <Route
+            path="/invoice-page"
+            exact
+            render={(props) => <InvoicePage {...props} />}
+          />
+          <Route
+            path="/landing-page"
+            exact
+            render={(props) => <LandingPage {...props} />}
+          />
+          <Route
+            path="/login-page"
+            exact
+            render={(props) => <LoginPage {...props} />}
+          />
+          <Route
+            path="/pricing-page"
+            exact
+            render={(props) => <PricingPage {...props} />}
+          />
+          <Route
+            path="/product-page"
+            exact
+            render={(props) => <ProductPage {...props} />}
+          />
+          <Route
+            path="/profile-page"
+            exact
+            render={(props) => <ProfilePage {...props} />}
+          />
+          <Route
+            path="/register-page"
+            exact
+            render={(props) => <RegisterPage {...props} />}
+          />
+          <Route
+            path="/reset-page"
+            exact
+            render={(props) => <ResetPage {...props} />}
+          />
+          <Redirect to="/index" />
+        </Switch>
+      </BrowserRouter>,
     </>
   );
 }

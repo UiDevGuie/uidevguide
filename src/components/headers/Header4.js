@@ -29,7 +29,7 @@ function Header4() {
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Creative Tim
+                  Ui Dev Guide
                 </NavbarBrand>
                 <button
                   aria-controls="navbarSupportedContent"
@@ -135,7 +135,7 @@ function Header4() {
                   <h1 className="display-3 text-white">
                     One Stop solution Interview Preparation
                   </h1>
-                   <Link to="/about-us">
+                   <Link to="/javascript">
                   <Button
                     className="btn-icon mt-3 mb-sm-0"
                     color="warning"
