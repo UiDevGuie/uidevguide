@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from 'react-router-dom';
 // reactstrap components
 import {
   Button,
@@ -131,20 +131,24 @@ function Header4() {
             <Container className="text-center">
               <Row>
                 <Col className="mx-auto" lg="7">
-                  <h1 className="video-text">People stories</h1>
+                  <h1 className="video-text">Ui Dev Guide</h1>
                   <h1 className="display-3 text-white">
-                    The time is right now!
+                    One Stop solution Interview Preparation
                   </h1>
+                   <Link to="/about-us">
                   <Button
                     className="btn-icon mt-3 mb-sm-0"
                     color="warning"
-                    href="https://www.creative-tim.com/product/argon-design-system-pro-react?ref=adspr-header4"
                   >
                     <span className="btn-inner--icon">
                       <i className="ni ni-button-play"></i>
                     </span>
-                    <span className="btn-inner--text">Play more</span>
+                    <span className="btn-inner--text">
+                    
+                    Get Started
+                    </span>
                   </Button>
+                  </Link>
                 </Col>
               </Row>
             </Container>

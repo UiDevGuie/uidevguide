@@ -26,7 +26,6 @@ function LandingPage() {
   return (
     <>
       <DemoNavbar type="transparent" />
-      
       <div className="wrapper">
         <Header4 />
         <Feature6 />

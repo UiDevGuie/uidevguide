@@ -1,5 +1,5 @@
 {
-  "name": "argon-design-system-pro-react",
+  "name": "ui-dev-guide",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,6 @@
     "gulp-append-prepend": "1.0.8",
     "headroom.js": "0.11.0",
     "moment": "2.27.0",
-    "sass": "^1.53.0",
     "nouislider": "14.6.0",
     "prop-types": "15.7.2",
     "react": "16.13.1",
@@ -21,9 +20,10 @@
     "react-dom": "16.13.1",
     "react-github-button": "0.1.11",
     "react-google-maps": "9.4.5",
-    "react-router-dom": "5.2.0",
+    "react-router-dom": "^5.3.3",
     "react-scripts": "3.4.1",
-    "reactstrap": "8.5.1"
+    "reactstrap": "8.5.1",
+    "sass": "^1.53.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -51,8 +51,8 @@
     ]
   },
   "optionalDependencies": {
-    "typescript": "3.9.7",
     "@types/googlemaps": "3.39.11",
-    "@types/markerclustererplus": "2.1.33"
+    "@types/markerclustererplus": "2.1.33",
+    "typescript": "3.9.7"
   }
 }

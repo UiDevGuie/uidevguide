@@ -93,70 +93,29 @@ function DemoNavbar(props) {
             <Nav
               className="navbar-nav-hover align-items-lg-center ml-lg-auto"
               navbar
-            >
-              <UncontrolledDropdown nav>
+            > 
+
+
+<UncontrolledDropdown nav>
                 <DropdownToggle
+                  tag={NavLink}
                   data-toggle="dropdown"
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                   role="button"
-                  tag={NavLink}
+                  
                 >
-                  <i className="ni ni-ui-04 d-lg-none"></i>
-                  <span className="nav-link-inner--text">Elements</span>
+                  <i className="ni ni-app d-lg-none"></i>
+                  <span className="nav-link-inner--text">JavaScript</span>
                 </DropdownToggle>
-                <DropdownMenu className="dropdown-menu-xl">
-                  <div className="dropdown-menu-inner">
-                    <Media
-                      className="d-flex align-items-center"
-                      to="/index"
-                      tag={Link}
-                    >
-                      <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                        <i className="ni ni-spaceship"></i>
-                      </div>
-                      <Media body className="ml-3">
-                        {/* <h6 className="heading text-primary mb-md-1">
-                          Elements
-                        </h6> */}
-                        <p className="description d-none d-md-inline-block mb-0">
-                          Learn how to use compiling Scss, change brand colors
-                          and more.
-                        </p>
-                      </Media>
-                    </Media>
-                    <Media
-                      className="d-flex align-items-center"
-                      to="/presentation"
-                      tag={Link}
-                    >
-                      <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                        <i className="ni ni-palette"></i>
-                      </div>
-                      <Media body className="ml-3">
-                        <h6 className="heading text-primary mb-md-1">
-                          Presentation
-                        </h6>
-                        <p className="description d-none d-md-inline-block mb-0">
-                          Learn more about colors, typography, icons and the
-                          grid system we used for .
-                        </p>
-                      </Media>
-                    </Media>
-                  </div>
-                  <div className="dropdown-menu-footer">
-                    <DropdownItem href="https://www.creative-tim.com/learning-lab/reactstrap/overview/argon-design-system">
-                      <i className="ni ni-atom"></i> Getting Started
-                    </DropdownItem>
-                    <DropdownItem href="https://www.creative-tim.com/learning-lab/reactstrap/colors/argon-design-system">
-                      <i className="ni ni-ui-04"></i> Foundation
-                    </DropdownItem>
-                    <DropdownItem href="https://www.creative-tim.com/learning-lab/reactstrap/core-accordions/argon-design-system">
-                      <i className="ni ni-archive-2"></i> Components
-                    </DropdownItem>
-                  </div>
+                <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
+                  <DropdownItem tag={Link} to="/javascript">
+                    <i className="ni ni-album-2 text-info"></i>
+                    JavaScript Blogs
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+            
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   tag={NavLink}

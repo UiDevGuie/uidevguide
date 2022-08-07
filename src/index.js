@@ -28,11 +28,13 @@ import ProductPage from "views/examples/ProductPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ResetPage from "views/examples/ResetPage.js";
+import Javascript from "./routes/Javascript/Javascript";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" exact render={(props) => <LandingPage {...props} />} />
+      <Route path="/javascript" exact render={(props) => <Javascript {...props} />} />
       <Route
         path="/sections"
         exact

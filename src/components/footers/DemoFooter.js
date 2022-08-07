@@ -89,7 +89,7 @@ function DemoFooter() {
                   href="https://www.creative-tim.com/?ref=adspr-footer"
                   target="_blank"
                 >
-                  Creative Tim
+                  Ui Dev Guide
                 </a>
                 .
               </div>
