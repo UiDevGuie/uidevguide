@@ -26,8 +26,10 @@ import ProductPage from "views/examples/ProductPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ResetPage from "views/examples/ResetPage.js";
+
 import Javascript from "../routes/Javascript/Javascript";
 import DemoNavbar from "../components/navbars/DemoNavbar";
+import Editor from '../Admin/editor';
 function App() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -51,8 +53,10 @@ function App() {
       <DemoNavbar type="transparent" />
       <BrowserRouter>
         <Switch>
+       
           <Route path="/index" exact render={(props) => <LandingPage {...props} />} />
           <Route path="/javascript" exact render={(props) => <Javascript {...props} />} />
+          <Route path="/editor" exact render={(props) => <Editor {...props} />} />
           <Route
             path="/sections"
             exact

@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+  }
+
+  .editor-container{
+display: flex;
+flex-direction: row;
+margin: 5rem 1rem;
+
+  }
+  .editor,
+  .preview {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .preview {
+    margin: 0;
+    padding: 2rem;
+    padding-top: 4.2rem;
+  }
+  .editor-app {
+    background: wheat;
+  }
+  .parsed-html{
+    display: flex;
+  }
+  
+  .app .ql-container {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background: #fefcfc;
+  }
+  
+  /* Snow Theme */
+  .app .ql-snow.ql-toolbar {
+    display: block;
+    background: #eaecec;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  
+  /* Bubble Theme */
+  .app .ql-bubble .ql-editor {
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+  }
+  
+  .app .ql-editor {
+    min-height: 18em;
+  }
+  
+  .themeSwitcher {
+    margin-top: 0.5em;
+    font-size: small;
+  }
