@@ -33,7 +33,7 @@ class Editor extends React.Component {
       
       <div className="editor-container">
         <DemoNavbar className="sticky-top" type="dark" />
-        <div className="editor">
+        <div className="editor px-4">
           <ReactQuill
             theme={this.state.theme}
             onChange={this.handleChange}
