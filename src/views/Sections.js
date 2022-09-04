@@ -19,7 +19,6 @@ import PricingsSection from "components/sections-page/PricingsSection.js";
 import TestimonialsSection from "components/sections-page/TestimonialsSection.js";
 import ContactUsSection from "components/sections-page/ContactUsSection.js";
 import TablesSection from "components/sections-page/TablesSection.js";
-import AccordionsSection from "components/sections-page/AccordionsSection.js";
 
 function Sections() {
   React.useEffect(() => {
@@ -52,7 +51,7 @@ function Sections() {
         <TestimonialsSection />
         <ContactUsSection />
         <TablesSection />
-        <AccordionsSection />
+        {/* <AccordionsSection /> */}
         <DemoFooter />
       </div>
     </>

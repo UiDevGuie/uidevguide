@@ -9,7 +9,6 @@ import DemoNavbar from "components/navbars/DemoNavbar.js";
 import DemoFooter from "components/footers/DemoFooter.js";
 import HeaderBlogPost from "components/headers/HeaderBlogPost.js";
 import ActivityFeed from "components/feed/ActivityFeed.js";
-import Blogs3 from "components/blogs/Blogs3.js";
 
 function BlogPost() {
   React.useEffect(() => {
@@ -187,7 +186,6 @@ function BlogPost() {
           </Container>
         </section>
         <section className="section">
-          <Blogs3 />
         </section>
         <DemoFooter />
       </div>

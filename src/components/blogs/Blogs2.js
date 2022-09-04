@@ -3,120 +3,89 @@ import React from "react";
 // reactstrap components
 import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
 
+
+const blogs = [
+  {
+    title: "Javascript Bundle",
+    url: 'javascript.png'
+  },
+  {
+    title: "Angular Bundle",
+    url: 'angular.png'
+  },
+  {
+    title: "React Bundle",
+    url: 'React.png'
+  },
+  {
+    title: "HTML/CSS Bundle",
+    url: 'CSS3_and_HTML5_logos_and_wordmarks.svg.png'
+  },
+  {
+    title: "Ngrx",
+    url: 'ngrx.svg'
+  },
+  {
+    title: "Redux",
+    url: 'redux.svg'
+  },
+  {
+    title: "Coding Bundle",
+    url: 'coding.jpg'
+  },
+  {
+    title: "Learning Resources",
+    url: 'resources.jpg'
+  },
+  {
+    title: "Free Mock Interviews",
+    url: 'mock-interviews.jpg'
+  },
+  {
+    title: "One on doubt session and job guidence",
+    url: 'doubt.jpg'
+  },
+  {
+    title: "Life-time access for private group",
+    url: 'private-group.jpg'
+  },
+  {
+    title: "Resume guidence",
+    url: 'resume.jpg'
+  },
+
+]
 function Blogs2() {
   return (
     <>
       <section className="blogs-2">
-        <Container fluid>
-          <Row className="mb-md-5">
-            <Col className="mx-auto" md="8">
-              <h3 className="display-3 text-center">Our recent writings</h3>
-              <p className="lead text-center">
-                I always felt like I could do anything. That’s the main thing
-                people are controlled by! Thoughts- their perception of
-                themselves! They're slowed down by their perception of
-                themselves. If you're taught you can’t do anything, you won’t do
-                anything. I was taught I could do everything.
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  className="full-background"
-                  style={{
-                    backgroundImage:
-                      "url(" + require("assets/img/sections/damian.jpg") + ")",
-                  }}
-                ></div>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <CardBody>
-                    <div className="content-bottom">
-                      <h6 className="card-category text-white opacity-8">
-                        AI at the Edge
-                      </h6>
-                      <CardTitle tag="h5">Research Byte</CardTitle>
-                    </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  className="full-background"
-                  style={{
-                    backgroundImage:
-                      "url(" + require("assets/img/sections/ashim.jpg") + ")",
-                  }}
-                ></div>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <CardBody>
-                    <div className="content-bottom">
-                      <h6 className="card-category text-white opacity-8">
-                        Spectrum
-                      </h6>
-                      <CardTitle tag="h5">Data Virtualization</CardTitle>
-                    </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  className="full-background"
-                  style={{
-                    backgroundImage:
-                      "url(" + require("assets/img/sections/odin.jpg") + ")",
-                  }}
-                ></div>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <CardBody>
-                    <div className="content-bottom">
-                      <h6 className="card-category text-white opacity-8">
-                        Touch on a trend
-                      </h6>
-                      <CardTitle tag="h5">New Challenges</CardTitle>
-                    </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  className="full-background"
-                  style={{
-                    backgroundImage:
-                      "url(" + require("assets/img/sections/dane.jpg") + ")",
-                  }}
-                ></div>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <CardBody>
-                    <div className="content-bottom">
-                      <h6 className="card-category text-white opacity-8">
-                        Self-Driving Cars
-                      </h6>
-                      <CardTitle tag="h5">Driverless Future</CardTitle>
-                    </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
+        <Container fluid className="p-3">
+          <h3 className="display-3 text-center">What we are offering you in single bundle</h3>
+          <Row className="p-5">
+            {blogs.map(element => (
+
+              <Col lg="3" key={element.title}>
+                <Card
+                  className="card-blog card-background"
+                  data-animation="zooming"
+                >
+                  <div
+                    className="full-background"
+                    style={{
+                      backgroundImage: "url(" + require(`assets/img/${element.url}`) + ")",
+                    }}
+                  ></div>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <CardBody>
+                      <div className="content-bottom">
+                        <CardTitle tag="h5">{element.title}</CardTitle>
+                      </div>
+                    </CardBody>
+                  </a>
+                </Card>
+              </Col>
+
+            ))}
           </Row>
         </Container>
       </section>

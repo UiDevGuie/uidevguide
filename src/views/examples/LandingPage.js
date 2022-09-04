@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 // reactstrap components
 // import {
@@ -14,6 +15,7 @@ import Feature1 from "components/features/Feature1.js";
 import Blogs2 from "components/blogs/Blogs2.js";
 import Pricing5 from "components/pricings/Pricing5.js";
 
+import {  Container, Row, Col,Button ,NavLink} from "reactstrap";
 function LandingPage() {
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -28,12 +30,48 @@ function LandingPage() {
       <DemoNavbar type="transparent" />
       <div className="wrapper">
         <Header4 />
-        <Feature6 />
-        <Feature1 />
+          <Container className="text-center">
+              <Row>
+                <Col className="mx-auto" lg="7">
+                   <Link to="/checkout-page">
+                  <Button
+                    className="btn-icon mt-3 mb-sm-0"
+                    color="warning"
+                  >
+                    <span className="btn-inner--icon">
+                      <i className="ni ni-button-play"></i>
+                    </span>
+                    <span className="btn-inner--text">
+                   Claim your Early bird offer now
+                    </span>
+                  </Button>
+                  </Link>
+                </Col>
+              </Row>
+            </Container>
         <Blogs2 />
-        <br></br>
-        <br></br>
-        <Pricing5 />
+        <Container className="text-center">
+              <Row>
+                <Col className="mx-auto" lg="7">
+                   <Link to="/checkout-page">
+                  <Button
+                    className="btn-icon mt-3 mb-sm-0"
+                    color="warning"
+                  >
+                    <span className="btn-inner--icon">
+                      <i className="ni ni-button-play"></i>
+                    </span>
+                    <span className="btn-inner--text">
+                   Claim your Early bird offer now
+                    </span>
+                  </Button>
+                  </Link>
+                </Col>
+              </Row>
+            </Container>
+        <Feature6 />
+        {/* <Pricing5 /> */}
+     
         <DemoFooter />
       </div>
     </>

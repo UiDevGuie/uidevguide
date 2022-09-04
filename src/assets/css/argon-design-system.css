@@ -3171,7 +3171,8 @@ input[type="button"].btn-block {
 .nav-tabs {
   border-bottom: 0.0625rem solid #dee2e6; }
   .nav-tabs .nav-item {
-    margin-bottom: -0.0625rem; }
+    margin-bottom: -0.0625rem;
+    color:white; }
   .nav-tabs .nav-link {
     border: 0.0625rem solid transparent;
     border-top-left-radius: 0.25rem;
@@ -16496,7 +16497,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     -moz-box-shadow: 13px 13px 50px -24px #172b4d;
     box-shadow: 13px 13px 50px -24px #172b4d; }
   .info.info-hover-primary:hover {
-    background-color: #5e72e4;
+    background-color: #525f7f;
     -webkit-box-shadow: 13px 13px 50px -24px #5e72e4;
     -moz-box-shadow: 13px 13px 50px -24px #5e72e4;
     box-shadow: 13px 13px 50px -24px #5e72e4; }

@@ -14,7 +14,6 @@ import ProductCard1 from "components/cards/ProductCard1.js";
 import ProductCard2 from "components/cards/ProductCard2.js";
 import ProductCard3 from "components/cards/ProductCard3.js";
 import ProductCard4 from "components/cards/ProductCard4.js";
-import Blogs1 from "components/blogs/Blogs1.js";
 import ProductCard5 from "components/cards/ProductCard5.js";
 import ProductCard6 from "components/cards/ProductCard6.js";
 import ProductCard7 from "components/cards/ProductCard7.js";
@@ -90,7 +89,6 @@ function Ecommerce() {
             </Container>
           </div>
           <div className="text-center">
-            <Blogs1 />
           </div>
           <div className="section">
             <Container>

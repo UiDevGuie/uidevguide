@@ -10,8 +10,6 @@ import HeaderBlogPosts from "components/headers/HeaderBlogPosts.js";
 import BlogCard10 from "components/cards/BlogCard10.js";
 import BlogCard11 from "components/cards/BlogCard11.js";
 import BlogCard12 from "components/cards/BlogCard12.js";
-import Blogs3 from "components/blogs/Blogs3.js";
-import Blogs4 from "components/blogs/Blogs4.js";
 import Team2 from "components/teams/Team2.js";
 import PreFooter2 from "components/pre-footers/PreFooter2.js";
 import PreFooter5 from "components/pre-footers/PreFooter5.js";
@@ -45,10 +43,8 @@ function BlogPosts() {
             </Row>
           </Container>
           <section className="section">
-            <Blogs3 />
           </section>
           <section>
-            <Blogs4 />
           </section>
           <div className="section bg-default">
             <Team2 />

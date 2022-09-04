@@ -133,9 +133,9 @@ function Header4() {
                 <Col className="mx-auto" lg="7">
                   <h1 className="video-text">Ui Dev Guide</h1>
                   <h1 className="display-3 text-white">
-                    One Stop solution Interview Preparation
+                  Crack MNC Companies With Our Guide
                   </h1>
-                   <Link to="/javascript">
+                   <Link to="/checkout-page">
                   <Button
                     className="btn-icon mt-3 mb-sm-0"
                     color="warning"
@@ -144,7 +144,6 @@ function Header4() {
                       <i className="ni ni-button-play"></i>
                     </span>
                     <span className="btn-inner--text">
-                    
                     Get Started
                     </span>
                   </Button>

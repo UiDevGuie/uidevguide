@@ -17,11 +17,11 @@ function Feature6() {
                   <i className="ni ni-html5 text-info"></i>
                 </div>
                 <div className="description pl-4">
-                  <h5 className="title">For Developers</h5>
+                  <h5 className="title">For Beginner</h5>
                   <p>
-                    The time is now for it to be okay to be great. People in
-                    this world shun people for being great. For being a bright
-                    color. For standing out. But the time is now.
+                  Find the beginners Guide and roadmap for becoming a frontend 
+                  developer/ Full stack Developer. If you are non- technical 
+                  background then this would be for you only to enter in IT fields
                   </p>
                   <a
                     className="text-info"
@@ -37,12 +37,10 @@ function Feature6() {
                   <i className="ni ni-app text-info"></i>
                 </div>
                 <div className="description pl-4">
-                  <h5 className="title">For Designers</h5>
+                  <h5 className="title">For JobSeekers</h5>
                   <p>
-                    There’s nothing I really wanted to do in life that I wasn’t
-                    able to get good at. That’s my skill. I’m not really
-                    specifically talented at anything except for the ability to
-                    learn.
+                  Crack Interview for MNC Companies,
+                  We provide our Interview Question and Answer bundle solved of Big MNC Companies for you to crack Interviews.
                   </p>
                   <a
                     className="text-info"
@@ -53,26 +51,7 @@ function Feature6() {
                   </a>
                 </div>
               </div>
-              <div className="info info-horizontal info-hover-primary">
-                <div className="icon icon-shape icon-shape-info rounded-circle text-white">
-                  <i className="ni ni-bell-55 text-info"></i>
-                </div>
-                <div className="description pl-4">
-                  <h5 className="title">For Beginners</h5>
-                  <p>
-                    That’s what I do. That’s what I’m here for. Don’t be afraid
-                    to be wrong because you can’t learn anything from a
-                    compliment. If everything I did failed - which it doesn't.
-                  </p>
-                  <a
-                    className="text-info"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    Learn more
-                  </a>
-                </div>
-              </div>
+              
             </Col>
             <Col className="mx-md-auto" lg="6" xs="10">
               <img
