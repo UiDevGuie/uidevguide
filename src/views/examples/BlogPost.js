@@ -8,7 +8,6 @@ import { Container, Row, Col } from "reactstrap";
 import DemoNavbar from "components/navbars/DemoNavbar.js";
 import DemoFooter from "components/footers/DemoFooter.js";
 import HeaderBlogPost from "components/headers/HeaderBlogPost.js";
-import ActivityFeed from "components/feed/ActivityFeed.js";
 
 function BlogPost() {
   React.useEffect(() => {
@@ -180,7 +179,6 @@ function BlogPost() {
           <Container>
             <Row>
               <Col className="mx-auto" md="8">
-                <ActivityFeed />
               </Col>
             </Row>
           </Container>

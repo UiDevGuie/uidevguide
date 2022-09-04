@@ -9,13 +9,13 @@ function ContactUs3() {
   return (
     <>
       <div className="contactus-3">
-        <div className="page-header">
+        {/* <div className="page-header">
           <img
             alt="..."
             className="bg-image"
             src={require("assets/img/ill/bg_contactus3.svg")}
           ></img>
-        </div>
+        </div> */}
         <Container className="pt-5">
           <Row>
             <Col className="text-center my-5" md="12">

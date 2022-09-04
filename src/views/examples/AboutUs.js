@@ -9,7 +9,6 @@ import React from "react";
 import DemoNavbar from "components/navbars/DemoNavbar.js";
 import DemoFooter from "components/footers/DemoFooter.js";
 import Header5 from "components/headers/Header5.js";
-import Features1 from "components/features/Feature1.js";
 import Pricing5 from "components/pricings/Pricing5.js";
 import Team1 from "components/teams/Team1.js";
 
@@ -27,7 +26,6 @@ function AboutUs() {
       <DemoNavbar  />
       <div className="wrapper">
         <Header5 />
-        <Features1 />
         <Pricing5 />
         <Team1 />
         <DemoFooter />
