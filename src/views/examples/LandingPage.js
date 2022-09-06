@@ -24,6 +24,10 @@ function LandingPage() {
       document.body.classList.remove("landing-page");
     };
   });
+  const openLinkInNewTab = ( url ) => {
+    const newTab = window.open(url, '_blank', 'noopener,noreferrer');
+    if ( newTab ) newTab.opener = null;
+  }
   return (
     <>
       <DemoNavbar type="transparent" />
@@ -32,10 +36,12 @@ function LandingPage() {
           <Container className="text-center">
               <Row>
                 <Col className="mx-auto" lg="7">
-                   <Link to="/checkout-page">
+                  
                   <Button
                     className="btn-icon mt-3 mb-sm-0"
                     color="warning"
+                onClick={ () => openLinkInNewTab('https://rzp.io/l/zLegYVRJJN')}
+
                   >
                     <span className="btn-inner--icon">
                       <i className="ni ni-button-play"></i>
@@ -44,7 +50,7 @@ function LandingPage() {
                    Claim your Early bird offer now
                     </span>
                   </Button>
-                  </Link>
+                 
                 </Col>
               </Row>
             </Container>
@@ -69,8 +75,6 @@ function LandingPage() {
               </Row>
             </Container>
         <Feature6 />
-        {/* <Pricing5 /> */}
-     
         <DemoFooter />
       </div>
     </>

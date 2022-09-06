@@ -133,7 +133,7 @@ function Header4() {
                 <Col className="mx-auto" lg="7">
                   <h1 className="video-text">Ui Dev Guide</h1>
                   <h1 className="display-3 text-white">
-                  Crack MNC Companies With Our Guide
+                  Crack MNC Companies With Our Interview Guide
                   </h1>
                    <Link to="/checkout-page">
                   <Button
